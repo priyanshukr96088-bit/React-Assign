@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  background: #020617;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+}
+
+/* CONTAINER */
+.container {
+  padding: 20px;
+}
+
+/* 🔥 HEADER */
+.main-header {
+  margin-bottom: 20px;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* MINI LINE */
+.mini-line {
+  width: 35px;
+  height: 2px;
+  background: #00f5d4;
+  box-shadow: 0 0 6px #00f5d4;
+}
+
+/* TOP TEXT */
+.sub-title {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #00f5d4;
+  margin: 0;
+  text-shadow: 0 0 4px #00f5d4;
+}
+
+/* MAIN TITLE */
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 5px 0;
+  display: flex;
+  gap: 10px;
+  color: #e5e7eb;
+}
+
+/* SCOREBOARD */
+h1 span {
+  color: #00f5d4;
+  text-shadow: 0 0 6px #00f5d4;
+}
+
+/*  LINE FIXED (important) */
+.line {
+  margin-top: 6px;
+  height: 3px;          
+  width: 65%;
+  background: #00f5d4;
+  box-shadow: 0 0 6px #00f5d4;
+}
+
+/*  FORM HEADER (missing tha) */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid (0,245,212,0.1);
+  box-shadow: 0 0 8px rgba(0,245,212.0.1);
+  border-bottom: none;
+  padding: 10px 15px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #00f5d4;
+}
+
+.form-header .left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00f5d4;
+  box-shadow: 0 0 6px #00f5d4;
+}
+
+.form-header .right {
+  opacity: 0.7;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  /* gap: 10px; */
+  margin: 0 0 20px 0; /* align with header */
+  border: none;
+  padding: 0px;
+  
+}
+
+.form input {
+  flex: 1;
+  padding: 12px;
+  background: #020617;
+  border: 1px solid #e80971;
+  color: white;
+  opacity: 0.7;
+}
+
+.form button {
+  background: transparent;
+  border: 0.1px solid rgb(255, 8, 0);
+  color: #00f5d4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  
+}
+
+.form button:hover {
+  box-shadow: 0 0 10px hsl(339, 92%, 50%);
+  opacity: 0.7;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  border: 2px solid gray;
+ /* opacity: 0.2; */
+}
+
+.stats div {
+  flex: 1;
+  padding: 20px;
+}
+
+.stats span {
+  display: block;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #00f5d4;
+}
+
+/* TABLE HEADER */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #5e605f;
+  opacity: 0.7;
+  border-bottom: none;
+  color: #00f5d4;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* TABLE */
+.table {
+  border: 0.1px solid #696b6b;
+  /* opacity: 0.6; */
+  border-left: 5px solid #7deb75;
+}
+
+
+/* ROW */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  padding: 15px;
+  border-bottom: 1px solid #0f172a;
+  align-items: center;
+}
+
+/* HEADER ROW */
+.header {
+  color: #00f5d4;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* HOVER */
+.row:hover {
+  background: rgba(0, 255, 200, 0.05);
+}
+
+/* SCORE */
+.score {
+  color: #ffd60a;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ffd60a;
+}
+
+/* STATUS */
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* PASS */
+.pass {
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  background: rgba(0, 255, 100, 0.08);
+  box-shadow: 0 0 6px rgba(0, 255, 100, 0.5);
+}
+
+/* FAIL */
+.fail {
+  border: 1px solid red;
+  color: red;
+  background: rgba(255, 0, 0, 0.08);
+  box-shadow: 0 0 6px red;
+}
+
+/* DOT */
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 6px currentColor;
+}
+
+/* UPDATE BOX */
+.update-box {
+  display: flex;
+  gap: 5px;
+}
+
+.update-box input {
+  width: 60px;
+  background: #020617;
+  border: 1px solid #00f5d4;
+  color: white;
+  padding: 5px;
+}
+
+.update-box button {
+  border: 1px solid #00f5d4;
+  background: transparent;
+  color: #00f5d4;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+
+.update-box button:hover {
+  box-shadow: 0 0 8px #00f5d4;
+}
+
+.footer{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+/* LABEL (faded text) */
+.label {
+  opacity: 0.5; 
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* VALUE (bright number) */
+.value {
+  display: block;
+  margin-top: 10px;
+  font-size: 25px;
+  color: #00f5d4;
+  opacity: 1; /* full visible */
+}
